@@ -1,0 +1,64 @@
+:root{
+    --radii: 10px;
+}
+body{
+background-color: hsl(210deg 100% 95%);
+Font-size: 16px;
+/* Font-family: [Karla](https://fonts.google.com/specimen/Karla);
+Font-weight: 400, 700; */
+font-family: cursive;
+}
+.main div{
+/* border: 3px solid rgb(41, 219, 101); */
+padding: 20px;
+/* border-radius: 4px; */
+}
+
+.main {
+display: grid;
+
+grid-template-areas: 
+'ho ho '
+'fee us';
+justify-content: center;
+height: 6rem;
+/* width: 10rem; */
+ margin-top: 150px;
+ margin-bottom: 150px;
+ /* padding: 8px; */
+ text-align: center;
+ text-align: left;
+}
+#home{
+    grid-area: ho;
+    background-color: whitesmoke;
+    border-top-left-radius: var(--radii);
+    border-top-right-radius: var(--radii);
+}
+#home h3 {
+    color: cyan;
+}
+#home h4 {color: hsl(71, 73%, 54%);}
+
+
+#fee{grid-area: fee;
+border-bottom-left-radius: var(--radii);
+    background-color: hsl(179deg 61% 65%);
+}
+#about{grid-area: us;
+/* background-color: hsl(218, 22%, 67%); */
+background-color: hsl(179, 62%, 43%);
+border-bottom-right-radius:var(--radii) ;
+}
+#about ul{
+    list-style: none;
+}
+
+#fee #btn{
+    cursor: pointer;
+    background-color:hsl(71, 73%, 54%); ;
+    height: 43px;
+    width: 237px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
